@@ -14,7 +14,7 @@ Problem:
 Example: 
 [{sku:'A'}, {sku:'A'}, {sku:'B'}] → ['A','B']
 
-Data Structure:
+Data Structures:
 Set for tracking unique SKUs, and an array for the final output.
 
 Array of objects as input, and an array of strings as output.
@@ -41,7 +41,7 @@ function uniqueSkus(rows) {
 
     for (const row of rows) { 
         if (!uniqueSkusSet.has(row.sku)) { // check if the SKU is not already in the Set
-            uniqueSeuSet.Set(row.sku); // add the SKU to the Set   
+            uniqueSkusSet.add(row.sku); // add the SKU to the Set   
             uniqueSkusArray.push(row.sku); // add the SKU to the unique SKUs array 
         }
     }
